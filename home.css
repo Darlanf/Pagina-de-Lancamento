@@ -1,0 +1,88 @@
+/* HOME */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img{
+    width: 100vw;
+    height: 100vh;
+}
+.iron1{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.iron2{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: opacity 5s infinite ease-out;
+    position: absolute;
+}
+.iron-logo{
+    position: absolute;
+    margin-top: 30%;
+    z-index: 5;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.marvel{
+    width: 30%;
+    position: absolute;
+    top: -30%;
+    animation: data 3s normal;
+}
+
+.lancamento{
+    margin-top: 1rem;
+    color: goldenrod;
+    font-size: xx-large;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: data 3s steps(11) normal;
+}
+
+@keyframes data {
+    from{
+        width: 0;
+    }
+    to{
+        width: 30%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
